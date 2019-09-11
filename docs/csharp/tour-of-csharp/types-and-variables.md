@@ -101,7 +101,7 @@ Existem vários tipos de *variáveis* no C#, incluindo campos, elementos de matr
   - Uma referência `null`, uma referência a uma instância de um tipo de classe que implementa esse tipo de interface ou uma referência a um valor demarcado de um tipo de valor que implementa esse tipo de interface
 - Tipo de matriz
   - Uma referência `null`, uma referência a uma instância desse tipo de matriz ou uma referência a uma instância de um tipo de matriz compatível
-- Tipo delegado
+- Tipo delegate
   - Uma referência `null` ou uma referência a uma instância de um tipo de delegado compatível
 
 > [!div class="step-by-step"]
