@@ -14,7 +14,7 @@ ms.locfileid: "70105582"
 
 Há dois tipos em C#: *tipos de referência* e *tipos de valor*. As variáveis de tipos de valor contêm diretamente seus dados enquanto variáveis de tipos de referência armazenam referências a seus dados, o último sendo conhecido como objetos. Com tipos de referência, é possível que duas variáveis referenciem o mesmo objeto e, portanto, é possível que operações em uma variável afetem o objeto referenciado por outra variável. Com tipos de valor, cada variável tem sua própria cópia dos dados e não é possível que operações em uma variável afetem a outra (exceto no caso de variáveis de parâmetros `ref` e `out`).
 
-Os tipos de valor do C# são divididos em *tipos simples*, *tipos de enum*, *tipos struct* e *tipos de valor anulável*. Os tipos de referência do C# são divididos em *tipos de classe*, *tipos de interface*, *tipos de matriz* e *tipos delegados*.
+Os tipos de valor do C# são divididos em *tipos simples*, *tipos de enum*, *tipos struct* e *tipos de valor anulável*. Os tipos de referência do C# são divididos em *tipos de classe*, *tipos de interface*, *tipos de matriz* e *tipos delegates*.
 
 O exemplo a seguir fornece uma visão geral do sistema de tipos do C#.
 
@@ -41,7 +41,7 @@ O exemplo a seguir fornece uma visão geral do sistema de tipos do C#.
     - Tipos definidos pelo usuário do formulário `interface I {...}`
   - [Tipos de matriz][ArrayTypes]
     - Unidimensional e multidimensional, por exemplo, `int[]` e `int[,]`
-  - [Tipos delegados][DelegateTypes]
+  - [Tipos delegates][DelegateTypes]
     - Tipos definidos pelo usuário do formulário `delegate int D(...)`
 
 [ValueTypes]: ../language-reference/keywords/value-types-table.md
@@ -61,7 +61,7 @@ O tipo `bool` do C# é usado para representar valores boolianos — valores que 
 
 O processamento de cadeia de caracteres e caracteres em C# usa codificação Unicode. O tipo `char` representa uma unidade de código UTF-16 e o tipo `string` representa uma sequência de unidades de código UTF-16.
 
-Os programas em C# usam *declarações de tipos* para criar novos tipos. Uma declaração de tipo especifica o nome e os membros do novo tipo. Cinco das categorias do C# de tipos são tipos definidos pelo usuário: tipos de classe, tipos struct, tipos de interface, tipos enum e tipos delegados.
+Os programas em C# usam *declarações de tipos* para criar novos tipos. Uma declaração de tipo especifica o nome e os membros do novo tipo. Cinco das categorias do C# de tipos são tipos definidos pelo usuário: tipos de classe, tipos struct, tipos de interface, tipos enum e tipos delegates.
 
 Um tipo `class` define uma estrutura de dados que contém membros de dados (campos) e membros de função (métodos, propriedades e outros). Os tipos de classe dão suporte à herança única e ao polimorfismo, mecanismos nos quais as classes derivadas podem estender e especializar as classes base.
 
@@ -69,7 +69,7 @@ Um tipo `struct` é semelhante a um tipo de classe que representa uma estrutura 
 
 Um tipo `interface` define um contrato como um conjunto nomeado de membros da função pública. Um `class` ou `struct` que implementa um `interface` deve fornecer implementações de membros da função da interface. Um `interface` pode herdar de várias interfaces base e um `class` ou `struct` pode implementar várias interfaces.
 
-Um tipo `delegate` representa referências aos métodos com uma lista de parâmetros e tipo de retorno específicos. Delegados possibilitam o tratamento de métodos como entidades que podem ser atribuídos a variáveis e passadas como parâmetros. Os delegados são análogos aos tipos de função fornecidos pelas linguagens funcionais. Eles também são parecidos com o conceito de ponteiros de função em outras linguagens, mas, ao contrário dos ponteiros de função, os delegados são orientados a objetos e fortemente tipados.
+Um tipo `delegate` representa referências aos métodos com uma lista de parâmetros e tipo de retorno específicos. Delegates possibilitam o tratamento de métodos como entidades que podem ser atribuídos a variáveis e passadas como parâmetros. Os delegates são análogos aos tipos de função fornecidos pelas linguagens funcionais. Eles também são parecidos com o conceito de ponteiros de função em outras linguagens, mas, ao contrário dos ponteiros de função, os delegates são orientados a objetos e fortemente tipados.
 
 Os tipos `class`, `struct`, `interface` e `delegate` dão suporte a genéricos e podem ser parametrizados com outros tipos.
 
@@ -101,8 +101,8 @@ Existem vários tipos de *variáveis* no C#, incluindo campos, elementos de matr
   - Uma referência `null`, uma referência a uma instância de um tipo de classe que implementa esse tipo de interface ou uma referência a um valor demarcado de um tipo de valor que implementa esse tipo de interface
 - Tipo de matriz
   - Uma referência `null`, uma referência a uma instância desse tipo de matriz ou uma referência a uma instância de um tipo de matriz compatível
-- Tipo delegado
-  - Uma referência `null` ou uma referência a uma instância de um tipo de delegado compatível
+- Tipo delegate
+  - Uma referência `null` ou uma referência a uma instância de um tipo de delegate compatível
 
 > [!div class="step-by-step"]
 > [Anterior](program-structure.md)
